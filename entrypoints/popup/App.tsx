@@ -29,7 +29,9 @@ function App() {
   return (
     <main className='page'>
       <section className='task-board' aria-label='Task board'>
+        <div className='task-board__glow' aria-hidden='true' />
         <header className='task-board__header'>
+          <p className='task-board__kicker'>Extension cockpit</p>
           <h1>Task Board</h1>
           <p>
             {completedTasks} of {tasks.length} tasks done

@@ -1,21 +1,9 @@
-# About: This script is used to build the project
+$ErrorActionPreference = "Stop"
 
-if (Test-Path .\_location.ps1) {
-	.\_location.ps1
-}
+$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$ProjectRoot = Split-Path -Parent (Split-Path -Parent $ScriptDir)
 
-Clear-Host
+Set-Location $ProjectRoot
 
-# Starting the project
-
-Write-Host "Starting the project" -ForegroundColor Green
-
-yarn
-
-# Running eslint and prettier
-
-Write-Host "Running eslint and prettier" -ForegroundColor Green
-
-yarn lint --fix
-
-yarn format --write '**/*.{ts,tsx,js,jsx,json,css}'
+Write-Output "Formatting code..."
+pnpm format
