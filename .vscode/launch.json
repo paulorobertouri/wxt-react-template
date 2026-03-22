@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug WXT Dev (Node)",
+      "name": "WXT React: Debug Dev",
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "pnpm",
@@ -11,11 +11,11 @@
       "cwd": "${workspaceFolder}"
     },
     {
-      "name": "Debug Vitest",
+      "name": "WXT React: Debug Tests",
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "pnpm",
-      "runtimeArgs": ["test", "--", "--watch"],
+      "runtimeArgs": ["test:watch"],
       "console": "integratedTerminal",
       "cwd": "${workspaceFolder}"
     }

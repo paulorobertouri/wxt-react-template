@@ -34,9 +34,9 @@ All frontend templates in this repository follow the same functional contract an
 ### Functional Contract
 
 - Deliver the same Task Board behavior:
-	- Add a task from input
-	- Toggle completion state
-	- Remove a task
+  - Add a task from input
+  - Toggle completion state
+  - Remove a task
 - Keep business rules in a pure domain module.
 - Keep UI concerns in framework-specific components.
 

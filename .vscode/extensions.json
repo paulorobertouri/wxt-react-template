@@ -1,6 +1,7 @@
 {
   "recommendations": [
-    "esbenp.prettier-vscode", // Prettier
-    "vitest.explorer" // Vitest
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "vitest.explorer"
   ]
 }
