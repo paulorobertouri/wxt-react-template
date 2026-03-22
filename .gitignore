@@ -17,7 +17,6 @@ htmlcov/
 .wxt/
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
