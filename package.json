@@ -20,7 +20,8 @@
     "test:watch": "vitest",
     "test:coverage": "vitest --run --coverage",
     "format": "prettier -w --ignore-path .gitignore \"**/*.{ts,tsx,css,html,json,md}\"",
-    "format:check": "prettier -c --ignore-path .gitignore \"**/*.{ts,tsx,css,html,json,md}\""
+    "format:check": "prettier -c --ignore-path .gitignore \"**/*.{ts,tsx,css,html,json,md}\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -44,7 +45,9 @@
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.0",
     "eslint-plugin-react-hooks": "^5.2.0",
+    "husky": "^9.1.7",
     "jsdom": "^26.1.0",
+    "lint-staged": "^16.4.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
@@ -68,6 +71,12 @@
       "plugin:@typescript-eslint/recommended",
       "plugin:react-hooks/recommended",
       "plugin:prettier/recommended"
+    ]
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
     ]
   }
 }

@@ -16,8 +16,8 @@ export default defineConfig({
       statements: 80,
       branches: 80,
       functions: 80,
-      lines: 80
-    }
+      lines: 80,
+    },
   },
   resolve: {
     alias: [{ find: '@', replacement: resolve(__dirname, './') }],
