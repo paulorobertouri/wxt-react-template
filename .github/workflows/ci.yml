@@ -32,5 +32,5 @@ jobs:
       - name: Typecheck
         run: pnpm typecheck
 
-      - name: Test
-        run: pnpm test
+      - name: Test (with coverage)
+        run: pnpm run test -- --coverage
