@@ -22,6 +22,26 @@
       "command": "pnpm test"
     },
     {
+      "label": "test:e2e",
+      "type": "shell",
+      "command": "pnpm test:e2e"
+    },
+    {
+      "label": "lint",
+      "type": "shell",
+      "command": "pnpm lint"
+    },
+    {
+      "label": "format:check",
+      "type": "shell",
+      "command": "pnpm format:check"
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "pnpm build"
+    },
+    {
       "label": "test:watch",
       "type": "shell",
       "command": "pnpm test:watch",
@@ -35,6 +55,11 @@
           "endsPattern": "Watching for file changes|PASS|FAIL"
         }
       }
+    },
+    {
+      "label": "playwright:ui",
+      "type": "shell",
+      "command": "pnpm test:e2e:headed"
     }
   ]
 }

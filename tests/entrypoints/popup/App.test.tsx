@@ -7,6 +7,9 @@ import App from '../../../entrypoints/popup/App';
 describe('App', () => {
   it('renders the task board title and summary', () => {
     render(<App />);
+    expect(
+      screen.getByRole('heading', { name: 'Starter Launchpad' }),
+    ).toBeVisible();
     expect(screen.getByRole('heading', { name: 'Task Board' })).toBeVisible();
     expect(screen.getByText('1 of 2 tasks done')).toBeVisible();
   });
