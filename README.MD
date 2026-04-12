@@ -1,6 +1,7 @@
 # wxt-react-template
 
-Browser extension template using WXT + React + TypeScript with a clear separation between domain and UI logic.
+Production-ready browser extension template using WXT + React + TypeScript,
+with a clear separation between domain and UI logic.
 
 ## Stack
 
